@@ -1,0 +1,351 @@
+/*
+Theme Name: NewsGoal
+Theme URI: https://themeansar.com/free-themes/newsgoal-free-blog-magazine-elementor-wordpress-theme/
+Author: Themeansar
+Author URI: https://themeansar.com
+Description: NewsGoal is a fast, clean, modern-looking Best Responsive News Magazine WordPress theme. The theme is fully widgetized, so users can manage the content by using easy to use widgets. NewsGoal is suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online and gaming magazines, newsportals,personal blogs, newspaper, publishing or review siteand any creative website. NewsGoal is SEO friendly, WPML,Gutenberg, translation and RTL ready. Live preview : https://newsup.themeansar.com/newsgoal/ and documentation at https://docs.themeansar.com/docs/newsup/
+Version: 0.3
+Requires PHP: 7.4
+Requires at least: 6.6
+Tested up to: 7.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: newsup
+Text Domain: newsgoal
+Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
+
+NewsGoal WordPress Theme is child theme of Newsup, Copyright 2020 Themeansar
+NewsGoal is distributed under the terms of the GNU General Public License v3
+
+NewsGoal is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+:root{
+	--headFont: "Exo 2", Sans-serif;
+	--bodyFont: "Rubik", Sans-serif;
+    --radius: 8px;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    letter-spacing: 0;
+}
+span.time {
+    margin-left: 5px;
+    padding: 2px 4px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 35px;
+}
+.mg-headwidget.center .heacent {
+    margin-top: unset !important;
+}
+.mg-headwidget.center .logo-center, .mg-headwidget.center .navbar-header, .mg-headwidget.center .site-branding-text  {
+    float: none;
+    text-align: center;
+}
+.mg-headwidget .navbar-wp{
+    border-bottom: 1px solid #eee;
+}
+.mg-nav-widget-area-back .inner {
+    min-height: 120px;
+}
+.mg-headwidget .navbar-wp .navbar-nav > li> a{
+    padding: 5px 18px;
+    border-radius: calc(var(--radius)/2);;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.mg-headwidget.center .navbar-brand {
+    float: none;
+    display: inline-block;
+    margin: 8px auto 0 auto;
+    font-weight: bold;
+}
+.mg-headwidget.center .heacent {
+    margin-top: 40px;
+    color: #fff;
+}
+.navbar-wp .dropdown-menu.searchinner .btn {
+    border: medium none;
+    border-radius: 0 4px 4px 0;
+    height: 40px;
+    line-height: 25px;
+    padding: 5px 15px;
+}
+.mg-search-box .dropdown-toggle::after {
+	display: none;
+}
+.m-header {
+	display: none;
+}
+.desk-header {
+	display: flex;
+}
+.mobilehomebtn {
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+}
+.mg-blog-post.md{
+	width: 49.8%;
+	float: left;
+	height: 236px;
+}
+.mg-blog-post.md .bottom h4 {
+    font-size: 26px;
+}
+.mb1px {
+	margin-bottom: 1px;
+}
+.navbar-wp .dropdown-menu{
+    z-index: 51;
+}
+.navbar-wp .dropdown-menu > li > a{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.mg-posts-sec-post{
+    padding: 15px 0;
+    border: 0;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px 0 #2d6ff71f;
+}
+.mg-posts-modul-6 .mg-post-thumb{
+    margin-right: 0;
+    border-radius: var(--radius);
+}
+.missed-inner, .single-class .mg-blog-post-box, .mg-info-author-block, .mg-featured-slider.p-3.mb-4, .mg-card-box.padding-20{
+    border-radius: var(--radius);
+    box-shadow: 0 5px 20px 0 #2d6ff71f;
+}
+.mg-posts-modul-6 .mg-sec-top-post .mg-blog-category{
+    line-height: 0;
+}
+.mg-blog-post.lg.mins {
+	width: 100%;
+	height: 222.5px;
+	margin-bottom: 30px;
+}
+.mg-blog-post.lg.mins h4.title {
+	font-size: 22px;
+}
+
+.post-items ul:not(.post-categories) li a,.post-items ol:not(.post-categories) li a, .post-items table a, strong a, blockquote a, code a, p a, span:not(.author-name):not(.comments-link):not(.posted-on):not(.post-list) a, .navigation.posts-navigation .nav-links a:hover,
+.navigation.posts-navigation .nav-links a:hover, #cancel-comment-reply-link, .comment-reply-link {
+    text-decoration: underline;
+}
+.mg-blog-post .bottom h4{
+    margin: 0 0 10px 0;
+}
+.container-fluid {
+	padding-right: 100px;
+	padding-left: 100px;
+}
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+    word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: calc(var(--radius)/2);;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+.wp-block-search .wp-block-search__label::before, .mg-widget .wp-block-group h2:before, .mg-sidebar .mg-widget .wtitle::before, .mg-sec-title h4::before, footer .mg-widget h6::before, .mg-latest-news .bn_title span{
+    display: none;
+}
+.wp-block-search .wp-block-search__label, .mg-widget .wp-block-group h2, .mg-sec-title h4, .mg-sidebar .mg-widget .wtitle,footer .mg-widget h6{
+    padding-right: 15px;
+    text-transform: capitalize;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+.mg-latest-news .bn_title .title::before {
+    content: '\f110';
+    font-family: 'FontAwesome';
+    font-size: 17px;
+    animation: fa-spin 2s linear infinite;
+    position: absolute;
+    left: 19px;
+}
+div.mg-latest-news .bn_title .title {
+    padding: 0 20px 0 45px;
+}
+.mg-widget .wp-block-group h2{
+    margin-bottom: 0;
+}
+.navigation.pagination .nav-links .page-numbers, .navigation.pagination .nav-links a{
+    font-weight: 400;
+}
+.mg-blog-category a{
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 7px;
+    border-radius: calc(var(--radius)/2);
+}
+.mg-blog-meta a{
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.mg-latest-news .bn_title, .btn-theme, .more_btn, .more-link, .mg-headwidget .navbar-wp .navbar-nav > li> a, .mg-blog-post.lg, .mg-sidebar .mg-widget, .mg-posts-sec-post, .mg-blog-post-3.minh, .small-post {
+    border-radius: var(--radius);
+}
+.btn-bell, .mg-social li span.icon-soci, .mg-head-detail .info-left li span.time, .post-share-icons a, .small-post img{
+    border-radius: calc(var(--radius)/2);
+}
+.mg-tpt-txnlst ul li a{
+    padding: 4px 6px;
+    text-transform: capitalize;
+}
+.mg-latest-news-sec{
+    margin-top: 30px;
+    box-shadow: none;
+}
+.mg-latest-news{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
+    border-radius: var(--radius) 0 0 var(--radius);
+}
+/* ==================================== Responsive Part =================================== */
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+	.container-fluid {
+		padding-right: 70px;
+		padding-left: 70px;
+	}
+}
+@media screen and (max-width: 767px) and (min-width: 240px) {
+    .mg-headwidget .navbar-wp .navbar-nav > li> a {
+        position: relative;
+        border-bottom: 1px solid rgba(225,225,225,0.4);
+    }
+    .mg-fea-area .mr-bot60 {
+        margin-bottom: 30px;
+    }
+    .mg-blog-post.lg {
+        margin-bottom: 30px;
+    }
+    blockquote::before {
+		margin: 6px 0;
+	}
+}
+
+@media (min-width: 1200px) {
+    .mg-blog-post.md .bottom h4 {
+        max-height: 65px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container-fluid {
+        padding-right: 30px;
+		padding-left: 30px;
+	}
+	.navbar-wp .navbar-nav > li> a i {
+    	display: none;
+	}
+    #menu-primary li.active.home {
+        display: none;
+    }
+    .mg-headwidget .navbar-wp{
+        padding-bottom: 0;
+    }
+    .navbar-header.col-lg-3.text-center{
+        padding-bottom: 16px;
+    }
+    .m-header {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .desk-header {
+        display: none;
+    }
+    .m-header .navbar-toggler{
+        padding-bottom: 0.65rem;
+    }
+    
+}
+@media (max-width: 767.98px) {
+    .mg-latest-news .bn_title .title{
+        display: inline-block;
+    }
+    div.mg-latest-news .bn_title .title {
+        padding: 0 20px 0 35px;
+        font-size: 0;
+    }
+}
+@media (min-width: 508px) and (max-width: 991px){
+	blockquote::before {
+		width: 10%;
+	}
+	blockquote p {
+		width: 90%;
+	}
+    .mg-nav-widget-area .site-title a{
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+    .site-branding-text .site-title a {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width:991.98px ) and (min-width:767px){
+    .wp-block-search__inside-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pulse.animated .mg-blog-meta .mg-blog-date {
+        font-size: 11px;
+        margin-right: 10px;
+    }
+    .pulse.animated .mg-blog-meta a {
+        font-size: 11px;
+    }
+    .pulse.animated .post-edit-link i {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    .mg-fea-area .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .mg-fea-area .col-md-3{
+        display: flex;
+    }
+    .mg-fea-area .mg-blog-post.lg.mins{
+        margin: 0 5px 30px 0;
+    }
+    .mg-fea-area .col-md-3.col-sm-6 {
+     display: block;
+    }
+}

@@ -1,0 +1,41 @@
+:root{
+	--pri-color: #2563EB;
+	--grady-color: linear-gradient(135deg, #2563EB 50%, #002E5D 100%);
+}
+.mg-headwidget .mg-head-detail, .mg-latest-news .bn_title,.mg-headwidget .navbar-wp .navbar-nav > li > a:hover, .mg-headwidget .navbar-wp .navbar-nav > li > a:focus, .mg-headwidget .navbar-wp .navbar-nav > .active > a, .mg-headwidget .navbar-wp .navbar-nav > .active > a:hover, .mg-headwidget .navbar-wp .navbar-nav > .active > a:focus, .mg-tpt-txnlst ul li a:hover, .mg-tpt-txnlst ul li a:focus, a.newsup-categories.category-color-1, .btn-theme, .more_btn, .more-link, .wp-block-search .wp-block-search__label, .mg-widget .wp-block-group h2, .mg-sidebar .mg-widget .wtitle, .mg-sec-title h4, footer .mg-widget h6, .ta_upscr, .post-form, .navigation.pagination .nav-links .page-numbers:hover, .navigation.pagination .nav-links .page-numbers:focus, .navigation.pagination .nav-links .page-numbers.current, .navigation.pagination .nav-links .page-numbers.current:hover, .navigation.pagination .nav-links .page-numbers.current:focus, .single-nav-links a.current, .single-nav-links span.current, .single-nav-links a:hover, .single-nav-links span:hover, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .mg-search-box .btn, .wp-block-search .wp-block-search__button, input[type="submit"], input[type="reset"], button{
+	background: var(--grady-color);
+}
+.mg-head-detail .info-left li span.time {
+    background: #fff;
+    color: var(--pri-color);
+}
+.mg-headwidget .navbar-wp{
+	background: #fff;
+}
+.mg-headwidget .navbar-wp .navbar-nav > li> a, .mg-search-box a{
+	color: #000;
+}
+.mg-search-box a:hover, .mg-search-box a:focus {
+    color: #000;
+}
+footer .overlay {
+    background: #01172e;
+}
+.mg-blog-meta a {
+    color: #777;
+}
+footer .mg-footer-copyright, footer .mg-footer-bottom-area .divide-line {
+    background: #002E5D;
+}
+footer .mg-footer-copyright p, footer .mg-footer-copyright a {
+    color: #ccc;
+}
+.mg-latest-news-sec{
+	background: transparent;
+}
+.site-title a, .site-description{
+	color: #fff;
+}
+.site-title a:hover{
+	color: var(--pri-color);
+}
