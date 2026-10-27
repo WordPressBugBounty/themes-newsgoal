@@ -4,10 +4,10 @@ Theme URI: https://themeansar.com/free-themes/newsgoal-free-blog-magazine-elemen
 Author: Themeansar
 Author URI: https://themeansar.com
 Description: NewsGoal is a fast, clean, modern-looking Best Responsive News Magazine WordPress theme. The theme is fully widgetized, so users can manage the content by using easy to use widgets. NewsGoal is suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online and gaming magazines, newsportals,personal blogs, newspaper, publishing or review siteand any creative website. NewsGoal is SEO friendly, WPML,Gutenberg, translation and RTL ready. Live preview : https://newsup.themeansar.com/newsgoal/ and documentation at https://docs.themeansar.com/docs/newsup/
-Version: 0.3
+Version: 0.4
 Requires PHP: 7.4
-Requires at least: 6.6
-Tested up to: 7.0
+Requires at least: 6.0
+Tested up to: 7.1
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Template: newsup
@@ -104,13 +104,24 @@ span.time {
     text-transform: capitalize;
     font-size: 14px;
 }
-.mg-posts-sec-post{
+.mg-posts-sec-post,.mg-blog-post-box{
     padding: 15px 0;
     border: 0;
     margin-bottom: 30px;
     box-shadow: 0 5px 20px 0 #2d6ff71f;
 }
-.mg-posts-modul-6 .mg-post-thumb{
+/* grid post */
+.grid-content .mg-blog-post-box{
+    padding: 15px;
+    border-radius: var(--radius);
+    .small{
+        padding: 20px 0 0;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+.mg-posts-modul-6 .mg-post-thumb, .mg-blog-post-box .mg-post-thumb{
     margin-right: 0;
     border-radius: var(--radius);
 }
@@ -190,6 +201,9 @@ span.time {
 }
 div.mg-latest-news .bn_title .title {
     padding: 0 20px 0 45px;
+}
+.bn_title .title::after{
+    display: none;
 }
 .mg-widget .wp-block-group h2{
     margin-bottom: 0;

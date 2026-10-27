@@ -1,11 +1,11 @@
 ﻿=== NewsGoal ===
 Contributors: Themeansar
 Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
-Requires at least: 6.6
+Requires at least: 6.0
 Requires PHP: 7.4
-Tested up to: 7.0
-Stable tag: 0.3
-Version: 0.3
+Tested up to: 7.1
+Stable tag: 0.4
+Version: 0.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -65,3 +65,6 @@ NewsGoal includes support for WooCommerce and Contact From 7.
 
 = 0.3 =
 * Update Theme Description.
+
+= 0.4 =
+* Fixed styling issue.
